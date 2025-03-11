@@ -1,15 +1,15 @@
-const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
-const SecurePage = require('../pageobjects/secure.page')
 
-describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
-        await LoginPage.open()
 
-        await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-        await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.flashAlert).toHaveText(
-            expect.stringContaining('You logged into a secure area!'))
+describe('First test', ()=>{
+    it('shuld return true for 1 === 1', ()=>{
+        const testvariable = 1
+        expect(testvariable) === 1
+    }),
+
+    it ('shuld return false for "EPAM" === "EPUM"', () => {
+        const testString = "EPAM";
+        expect("EPUM").toBe(testString)
     })
-})
 
+
+})
