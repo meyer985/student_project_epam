@@ -1,7 +1,7 @@
 class LoginForm {
 
- input(name) {
-    return  $(`input[data-test=${name}]`)
+ input(selector) {
+    return  $(`input[data-test=${selector}]`)
 }
 
 errorMessage() {
@@ -17,8 +17,17 @@ async clearInput(selector) {
         }
     }, selector); 
     await browser.keys('Backspace'); 
+    }
+}
+
+class Dashboard {
+
+    element() {
+       return $('div[data-test="primary-header"]');
+   }
 
 }
-}
 
-module.exports = LoginForm;
+
+
+module.exports = LoginForm
