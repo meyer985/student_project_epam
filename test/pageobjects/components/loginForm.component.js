@@ -1,6 +1,6 @@
 class LoginForm {
 
- input(selector) {
+input(selector) {
     return  $(`input[data-test=${selector}]`)
 }
 
@@ -20,13 +20,6 @@ async clearInput(selector) {
     }
 }
 
-class Dashboard {
-
-    element() {
-       return $('div[data-test="primary-header"]');
-   }
-
-}
 
 
 
