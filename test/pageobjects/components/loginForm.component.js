@@ -1,11 +1,11 @@
 class LoginForm {
 
 input(selector) {
-    return  $(`input[data-test=${selector}]`)
+   return  $(`//*[@id="${selector}"]`)
 }
 
 errorMessage() {
-return $('h3[data-test="error"]');
+return $('//*[@id="login_button_container"]/div/form/div[3]/h3');
 }
 
 async clearInput(selector) {
