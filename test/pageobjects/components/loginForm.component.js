@@ -18,16 +18,6 @@ async clearInput(selector) {
     }, selector); 
     await browser.keys('Backspace'); 
     }
-/*
-   async clearInput(selector) {
-        console.log(selector);
-        const field = await $(`input[data-test=${selector}]`);
-        
-        await field.waitForDisplayed();
-        await field.clearValue();  
-} */
-
 }
-
 
 module.exports = LoginForm
