@@ -4,8 +4,8 @@
   "description": "Final task in JS test automation course. ",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.js"
-  },
+    "test": "wdio run ./src/config/wdio.conf.js"
+    },
   "author": "Aleksei Grabovenko",
   "license": "ISC",
   "devDependencies": {
@@ -15,7 +15,9 @@
     "@wdio/mocha-framework": "^9.11.0",
     "@wdio/spec-reporter": "^9.11.0",
     "chromedriver": "^134.0.2",
+    "eslint": "^9.22.0",
     "geckodriver": "^5.0.0",
+    "globals": "^16.0.0",
     "wdio-chromedriver-service": "^8.1.1",
     "wdio-geckodriver-service": "^5.0.2"
   }

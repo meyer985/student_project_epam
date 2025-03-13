@@ -1,4 +1,4 @@
-const LoginPage = require('../pageobjects/pages/login.page');
+const LoginPage = require('../pageobjects/pages/login.page.js');
 const credentials = require('../utils/dataProvider.js'); 
 const MainPage = require('../pageobjects/pages/main.page.js');
 const {LOGIN_ERROR, PASSWORD_ERROR } = require('../utils/constants.js')
@@ -49,5 +49,3 @@ describe('Test login feature', async () => {
              });
        });
    });
-
-

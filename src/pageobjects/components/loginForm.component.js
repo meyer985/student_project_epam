@@ -9,7 +9,6 @@ return $('//*[@id="login_button_container"]/div/form/div[3]/h3');
 }
 
 async clearInput(selector) {
-    console.log(selector);
     await browser.execute((selector) => {
         const field = document.querySelector(`input[data-test=${selector}]`);
         if (field) {
@@ -20,4 +19,4 @@ async clearInput(selector) {
     }
 }
 
-module.exports = LoginForm
+module.exports = LoginForm;
