@@ -5,7 +5,7 @@ input(selector) {
 }
 
 errorMessage() {
-return $("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
+return $("//*[@id=\"login_button_container\"]/div/form//h3[@data-test=\"error\"]");
 }
 
 async clearInput(selector) {
@@ -20,3 +20,6 @@ async clearInput(selector) {
 }
 
 module.exports = LoginForm;
+
+//*[@id="login_button_container"]/div/form/div[3]/h3
+//*[@id="login_button_container"]/div/form/div[3]
