@@ -1,4 +1,4 @@
-const Dashboard = require('../components/dashboard.component')
+const Dashboard = require("../components/dashboard.component");
 
 class MainPage {
         constructor() {
@@ -6,7 +6,7 @@ class MainPage {
     }
 
     page() {
-        return $('//*[@id="inventory_container"]');
+        return $("//*[@id=\"inventory_container\"]");
     }
 }
 

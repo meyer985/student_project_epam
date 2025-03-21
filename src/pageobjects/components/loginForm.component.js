@@ -1,11 +1,11 @@
 class LoginForm {
 
 input(selector) {
-   return  $(`//*[@id="${selector}"]`)
+   return  $(`//*[@id="${selector}"]`);
 }
 
 errorMessage() {
-return $('//*[@id="login_button_container"]/div/form/div[3]/h3');
+return $("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
 }
 
 async clearInput(selector) {
@@ -15,7 +15,7 @@ async clearInput(selector) {
             field.select(); 
         }
     }, selector); 
-    await browser.keys('Backspace'); 
+    await browser.keys("Backspace"); 
     }
 }
 

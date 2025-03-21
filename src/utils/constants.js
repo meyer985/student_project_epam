@@ -4,4 +4,4 @@ const PASSWORD_ERROR = "Epic sadface: Password is required";
 module.exports = {
     LOGIN_ERROR,
     PASSWORD_ERROR 
-}
+};

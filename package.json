@@ -4,11 +4,13 @@
   "description": "Final task in JS test automation course. ",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./src/config/wdio.conf.js"
-    },
+    "test": "wdio run ./src/config/wdio.conf.js",
+    "lint": "eslint . --ext .js,.ts"
+  },
   "author": "Aleksei Grabovenko",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.22.0",
     "@wdio/cli": "^9.11.0",
     "@wdio/firefox-profile-service": "^9.10.1",
     "@wdio/local-runner": "^9.11.0",

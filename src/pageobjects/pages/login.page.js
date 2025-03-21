@@ -1,4 +1,4 @@
-const LoginForm = require('../components/loginForm.component')
+const LoginForm = require("../components/loginForm.component");
 
 class LoginPage {
     constructor() {
@@ -6,7 +6,7 @@ class LoginPage {
     }
 
     async open() {
-        await browser.url('/')
+        await browser.url("/");
     }
 }
 
